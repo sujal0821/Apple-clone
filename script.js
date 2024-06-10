@@ -16,3 +16,15 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
   });
+
+  var menu = document.querySelector(".ri-menu-line");
+  var clo = document.querySelector(".ri-close-line");
+  var nav = document.querySelector(".respo-nav");
+
+  menu.addEventListener("click",function(){
+    nav.style.top = "0%";
+})
+
+clo.addEventListener("click",function(){
+nav.style.top = "-120%";
+})
